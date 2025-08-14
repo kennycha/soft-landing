@@ -291,7 +291,7 @@ function generateReadme(config: LandingPageConfig, assetPaths: string[]): string
     ? `\n## Assets included:\n${assetPaths.map((path) => `- ${path}`).join('\n')}\n`
     : '';
 
-  return `# ${config.metadata?.title || 'Landing Page'}
+  return `# ${config.metadata?.title ?? 'Landing Page'}
 
 This is your generated landing page from Soft Landing.
 
@@ -302,16 +302,9 @@ This is your generated landing page from Soft Landing.
 ${assetsList}
 ## How to use:
 1. Upload all files to any web hosting service (maintaining the folder structure)
-2. Or open index.html directly in a web browser
-3. The page is self-contained with all styles and scripts included
-
-## Hosting suggestions:
-- Netlify: Drag and drop the ZIP file or individual files
-- Vercel: Upload via their dashboard  
-- GitHub Pages: Commit to a repository
-- Any web hosting service that supports HTML files
+2. And you're good to go!
 
 ${hasAssets ? '**Note**: Make sure to upload the assets folder along with other files to preserve image references.\n' : ''}
-Generated with Soft Landing - https://soft-landing.dev
+Generated with Soft Landing - https://kennycha.github.io/soft-landing/
 `;
 }

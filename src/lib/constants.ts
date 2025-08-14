@@ -10,12 +10,12 @@ backgroundGradient = true
 fontFamily = "Ubuntu"
 
 [hero]
-title = "Generate Beautiful Landing Pages from TOML"
+title = "Generate Ready-to-use Landing Pages from TOML"
 description = "Developers are too lazy to wrestle with design tools."
 imageUrl = "assets/hero_image.png"
 
 [hero.mainButton]
-text = "Go to Github Repo"
+text = "Star on Github"
 url = "https://github.com/kennycha/soft-landing"
 
 [hero.subButton]
@@ -97,7 +97,7 @@ url = "mailto:dudqn159@gmail.com"
 
 [footer]
 copyright = "© 2025 Kennycha"
-text = "Built with ♥ for developers who are lazy."
+text = "Built with Soft Landing"
 logoUrl = "assets/logo.png"
 
 [[footer.links]]
