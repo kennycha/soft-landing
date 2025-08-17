@@ -2,6 +2,8 @@
 
 A web-based tool that generates ready-to-use landing pages from TOML configuration. Built with React, TypeScript, and Vite for fast, client-side-only operation.
 
+> 💡 **Inspired by research**: This project was built after reading "[We studied 100+ devtool landing pages. Here is what actually works in 2025](https://evilmartians.com/chronicles/we-studied-100-devtool-landing-pages-here-is-what-actually-works-in-2025)" by Evil Martians, incorporating proven landing page patterns and best practices.
+
 ## Demo
 
 <img src=".github/images/demo1.webp" alt="Demo 1" width="600">
