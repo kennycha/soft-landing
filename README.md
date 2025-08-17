@@ -4,12 +4,6 @@ A web-based tool that generates ready-to-use landing pages from TOML configurati
 
 > 💡 **Inspired by research**: This project was built after reading "[We studied 100+ devtool landing pages. Here is what actually works in 2025](https://evilmartians.com/chronicles/we-studied-100-devtool-landing-pages-here-is-what-actually-works-in-2025)" by Evil Martians, incorporating proven landing page patterns and best practices.
 
-## Demo
-
-<img src=".github/images/demo1.webp" alt="Demo 1" width="600">
-
-<img src=".github/images/demo2.webp" alt="Demo 2" width="600">
-
 ## Features
 
 ### Currently Available
@@ -54,6 +48,12 @@ image_url = "assets/feature_item_1_image.png"
 
 2. **See the preview** update in real-time as you edit
 3. **Download your landing page** as a complete bundle ready for deployment
+
+## Demo
+
+<img src=".github/images/demo1.webp" alt="Demo 1" width="600">
+
+<img src=".github/images/demo2.webp" alt="Demo 2" width="600">
 
 ## Development
 
