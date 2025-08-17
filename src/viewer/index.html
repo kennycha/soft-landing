@@ -10,7 +10,9 @@
   <body>
     <div id="root"></div>
     <!-- Config will be injected here during download -->
-    <script>window.__CONFIG__ = window.__CONFIG__ || {};</script>
+    <script>
+      window.__CONFIG__ = window.__CONFIG__ ?? {};
+    </script>
     <script type="module" src="/src/viewer/main.tsx"></script>
   </body>
 </html>

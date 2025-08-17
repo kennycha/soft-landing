@@ -4,27 +4,27 @@ title = "Soft Landing"
 description = "The TOML-based landing page generator for lazy developers"
 
 [theme]
-primaryColor = "#3b82f6"
-secondaryColor = "#8b5cf6"
-backgroundGradient = true
-fontFamily = "Ubuntu"
+primary_color = "#3b82f6"
+secondary_color = "#8b5cf6"
+background_gradient = true
+font_family = "Ubuntu"
 
 [hero]
 title = "Generate Ready-to-use Landing Pages from TOML"
 description = "Developers are too lazy to wrestle with design tools."
-imageUrl = "assets/hero_image.png"
+image_url = "assets/hero_image.png"
 
-[hero.mainButton]
+[hero.main_button]
 text = "Star on Github"
 url = "https://github.com/kennycha/soft-landing"
 
-[hero.subButton]
+[hero.sub_button]
 text = "Or Contact Me"
 url = "mailto:dudqn159@gmail.com"
 
-[socialProof]
+[social_proof]
 title = "Trusted by developers at"
-logoUrls = [
+logo_urls = [
   "assets/logo_full.png",
   "assets/logo_full.png",
   "assets/logo_full.png",
@@ -35,23 +35,23 @@ logoUrls = [
   "assets/logo_full.png",
 ]
 
-[howItWorks]
+[how_it_works]
 title = "How Soft Landing Works"
 description = "From configuration to launch in minutes. Write your content, customize your design, and get a production-ready landing page with all files included."
 
-[[howItWorks.steps]]
+[[how_it_works.steps]]
 title = "Configure"
 description = "Write TOML config to define your landing page structure in simple format"
 
-[[howItWorks.steps]]
+[[how_it_works.steps]]
 title = "Preview"
 description = "See live preview and watch your changes update instantly in real-time"
 
-[[howItWorks.steps]]
+[[how_it_works.steps]]
 title = "Download"
 description = "Export production-ready HTML/CSS/JS bundle with one click"
 
-[[howItWorks.steps]]
+[[how_it_works.steps]]
 title = "Deploy"
 description = "Upload to any hosting platform like GitHub Pages, Netlify, or Vercel"
 
@@ -61,31 +61,31 @@ subtitle = "Simple configuration, beautiful results"
 
 [[features.items]]
 title = "Easy Configuration"
-imageUrl = "assets/feature_item_1_image.png"
+image_url = "assets/feature_item_1_image.png"
 
 [[features.items]]
 title = "Real-time Preview"
-imageUrl = "assets/feature_item_2_image.png"
+image_url = "assets/feature_item_2_image.png"
 
 [[features.items]]
 title = "One-click Export"
-imageUrl = "assets/feature_item_3_image.png"
+image_url = "assets/feature_item_3_image.png"
 
 [[features.items]]
 title = "Theme Customization"
-imageUrl = "assets/feature_item_4_image.png"
+image_url = "assets/feature_item_4_image.png"
 
 [testimonials]
 [[testimonials.items]]
 quote = "Built after reading an article that analyzed 100+ popular developer tool landing pages in 2025."
 author = "Kenny Cha"
 title = "Software Engineer"
-avatarUrl = "assets/avatar.png"
+avatar_url = "assets/avatar.png"
 [[testimonials.items]]
 quote = "Hope you like it!"
 author = "Kenny Cha"
 title = "Software Engineer"
-avatarUrl = "assets/avatar.png"
+avatar_url = "assets/avatar.png"
 
 [cta]
 title = "Ready to build something beautiful?"
@@ -98,7 +98,7 @@ url = "mailto:dudqn159@gmail.com"
 [footer]
 copyright = "© 2025 Kennycha"
 text = "Built with Soft Landing"
-logoUrl = "assets/logo.png"
+logo_url = "assets/logo.png"
 
 [[footer.links]]
 text = "Github"

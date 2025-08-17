@@ -62,7 +62,7 @@ export function getFontFamilyCSS(fontFamily: string): string {
     handwriting: `'${font.name}', cursive`,
   };
 
-  return fallbacks[font.category] || fallbacks['sans-serif'];
+  return fallbacks[font.category] ?? fallbacks['sans-serif'];
 }
 
 /**

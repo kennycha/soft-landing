@@ -39,7 +39,7 @@ const generateAssetPath = (fileName: string, existingAssets: AssetFile[]): strin
   // 중복된 이름이 있는지 확인하고 숫자 접미사 추가
   while (existingAssets.some((asset) => asset.name === safeName)) {
     const nameWithoutExt = baseName.replace(/\.[^/.]+$/, '');
-    const ext = baseName.match(/\.[^/.]+$/)?.[0] || '';
+    const ext = baseName.match(/\.[^/.]+$/)?.[0] ?? '';
     safeName = `${nameWithoutExt}-${counter}${ext}`;
     counter += 1;
   }

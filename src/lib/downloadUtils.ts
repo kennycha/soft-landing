@@ -130,9 +130,9 @@ export function generateIndexHtml(
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>${config.metadata?.title || 'Landing Page'}</title>
-    <meta name="description" content="${config.metadata?.description || 'A beautiful landing page'}" />
-    <link rel="icon" type="image/x-icon" href="${config.metadata?.favicon || ''}">
+    <title>${config.metadata?.title ?? 'Landing Page'}</title>
+    <meta name="description" content="${config.metadata?.description ?? 'A beautiful landing page'}" />
+    <link rel="icon" type="image/x-icon" href="${config.metadata?.favicon ?? ''}">
     ${cssLinks}
   </head>
   <body>
@@ -270,7 +270,7 @@ export async function downloadLandingPage(config: LandingPageConfig): Promise<vo
     allFiles['README.md'] = strToU8(readme);
 
     // Create filename from config
-    const filename = `${config.metadata?.title?.replace(/[^a-z0-9]/gi, '_').toLowerCase() || 'landing_page'}.zip`;
+    const filename = `${config.metadata?.title?.replace(/[^a-z0-9]/gi, '_').toLowerCase() ?? 'landing_page'}.zip`;
 
     // Download the zip
     downloadZip(allFiles, filename);

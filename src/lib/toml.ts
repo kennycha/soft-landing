@@ -1,6 +1,22 @@
 import * as TOML from '@iarna/toml';
 import { getFontFamilyCSS, DEFAULT_FONT } from './googleFonts';
 
+// Convert snake_case keys to camelCase recursively
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function convertSnakeToCamel(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(convertSnakeToCamel);
+  } else if (obj !== null && typeof obj === 'object') {
+    return Object.keys(obj).reduce((result, key) => {
+      const camelKey = key.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+      result[camelKey] = convertSnakeToCamel(obj[key]);
+      return result;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    }, {} as any);
+  }
+  return obj;
+}
+
 export interface LandingPageConfig {
   metadata?: {
     title?: string;
@@ -88,7 +104,8 @@ export function parseToml(tomlString: string): ParseResult {
       };
     }
 
-    const data = TOML.parse(tomlString) as LandingPageConfig;
+    const parsedData = TOML.parse(tomlString);
+    const data = convertSnakeToCamel(parsedData) as LandingPageConfig;
     return {
       success: true,
       data,

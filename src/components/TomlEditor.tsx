@@ -8,7 +8,7 @@ interface TomlEditorProps {
 
 export function TomlEditor({ value, onChange }: TomlEditorProps) {
   const handleEditorChange = (val: string | undefined) => {
-    onChange(val || '');
+    onChange(val ?? '');
   };
 
   return (
